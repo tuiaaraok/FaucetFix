@@ -45,6 +45,7 @@ struct PckrSctn: View {
     }
 }
 
+@available(iOS 16.0, *)
 struct DtPckrBtn: View {
     let txt: String
     @Binding var dt: Date
@@ -78,6 +79,7 @@ struct DtPckrBtn: View {
     }
 }
 
+@available(iOS 16.0, *)
 struct TmPckrBtn: View {
     let txt: String
     @Binding var tm: Date

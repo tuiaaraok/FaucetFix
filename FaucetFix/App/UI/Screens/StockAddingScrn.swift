@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct StockAddingScrn: View {
     @Binding var navPath: [Scrns]
     
@@ -79,6 +80,7 @@ struct StockAddingScrn: View {
     }
 }
 
+@available(iOS 16.0, *)
 private struct CategorySelectionView: View {
     @Binding var category: String
     @Binding var isMenuVisible: Bool
@@ -114,11 +116,4 @@ private struct CategorySelectionView: View {
         }.padding(EdgeInsets(top: 0, leading: 32, bottom: 0, trailing: 32))
     }
 }
-
-#Preview {
-    @Previewable @State var navPath: [Scrns] = []
-    StockAddingScrn(navPath: $navPath)
-}
-
-
 

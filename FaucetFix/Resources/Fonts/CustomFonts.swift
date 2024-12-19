@@ -76,6 +76,8 @@ extension Font {
 }
 
 
+@available(iOS 16.0, *)
+
 struct CustomFontsModifire: ViewModifier {
 
     private let fontBuilder: FontBuilder
@@ -94,6 +96,7 @@ struct CustomFontsModifire: ViewModifier {
 
 }
 
+@available(iOS 16.0, *)
 extension View {
     func customFont(_ fontBuilder: FontBuilder) -> some View {
         modifier(CustomFontsModifire(fontBuilder))

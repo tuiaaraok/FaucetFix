@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct HomeScrn: View {
     @Binding var navPath: [Scrns]
     
@@ -47,13 +48,6 @@ struct HomeScrn: View {
     private func navToSettingsScrn() {
         navPath.append(Scrns.settings)
     }
-    
-}
-
-
-#Preview {
-    @Previewable @State var navPath: [Scrns] = []
-    HomeScrn(navPath: $navPath)
 }
 
 

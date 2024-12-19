@@ -9,6 +9,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
+@available(iOS 17.0, *)
 @main
 struct HandyProApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate

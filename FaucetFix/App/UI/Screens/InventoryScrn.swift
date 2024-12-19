@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct InventoryScrn: View {
     @Binding var navPath: [Scrns]
     
@@ -55,6 +56,7 @@ extension Binding where Value: MutableCollection, Value.Element: Identifiable {
     }
 }
 
+@available(iOS 16.0, *)
 private struct StockView: View {
     let category: String
     @Binding var stocks: [Stock]
@@ -92,6 +94,7 @@ private struct StockView: View {
     }
 }
 
+@available(iOS 16.0, *)
 struct StockPodView: View {
     
     @Binding var stock: Stock
@@ -133,11 +136,6 @@ struct StockPodView: View {
         stock.quantity += 1
         storage.updateStockCountById(id: stock.id, quantity: stock.quantity)
     }
-}
-
-#Preview {
-    @Previewable @State var navPath: [Scrns] = []
-    OrderManagementScrn(navPath: $navPath)
 }
 
 

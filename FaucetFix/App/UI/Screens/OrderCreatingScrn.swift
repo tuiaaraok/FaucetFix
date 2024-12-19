@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct OrderCreatingScrn: View {
     @Binding var navPath: [Scrns]
     
@@ -65,11 +66,6 @@ struct OrderCreatingScrn: View {
     private func cancel() {
         navPath.removeLast()
     }
-}
-
-#Preview {
-    @Previewable @State var navPath: [Scrns] = []
-    OrderCreatingScrn(navPath: $navPath)
 }
 
 

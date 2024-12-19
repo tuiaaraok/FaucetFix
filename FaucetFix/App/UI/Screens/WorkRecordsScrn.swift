@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct WorkRecordsScrn: View {
     @Binding var navPath: [Scrns]
     
@@ -45,6 +46,7 @@ struct WorkRecordsScrn: View {
     }
 }
 
+@available(iOS 16.0, *)
 private struct WorkRecordView: View {
     
     let workRecord: WorkRecord
@@ -74,11 +76,6 @@ private struct WorkRecordView: View {
             
         }.frame(maxWidth: .infinity, minHeight: 156)
     }
-}
-
-#Preview {
-    @Previewable @State var navPath: [Scrns] = []
-    WorkRecordsScrn(navPath: $navPath)
 }
 
 

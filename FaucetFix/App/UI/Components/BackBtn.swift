@@ -21,8 +21,3 @@ struct BackBtn: View {
         
     }
 }
-
-#Preview {
-    @Previewable @State var navPath: [Scrns] = []
-    BackBtn(navPath: $navPath)
-}

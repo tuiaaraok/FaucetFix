@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct ActnBtns: View {
     
     let cancelButtonAction: () -> Void
@@ -37,6 +38,3 @@ struct ActnBtns: View {
     }
 }
 
-#Preview {
-    ActnBtns(cancelButtonAction: {}, saveButtonAction: {})
-}

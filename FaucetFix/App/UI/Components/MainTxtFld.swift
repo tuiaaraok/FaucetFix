@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct MainTxtFld: View {
     var ttl: String
     @Binding var txt: String
@@ -31,9 +32,4 @@ struct MainTxtFld: View {
         }
         .padding(EdgeInsets(top: 0, leading: 32, bottom: 0, trailing: 32))
     }
-}
-
-#Preview {
-    @Previewable @State var text: String = ""
-    MainTxtFld(ttl: "Title", txt: $text, plhldr: "Placeholder", axis: .horizontal)
 }

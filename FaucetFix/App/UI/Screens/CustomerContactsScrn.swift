@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct CustomerContactsScrn: View {
     @Binding var navPath: [Scrns]
     
@@ -49,6 +50,7 @@ struct CustomerContactsScrn: View {
     }
 }
 
+@available(iOS 16.0, *)
 private struct ContactView: View {
     
     let contact: Contact
@@ -77,11 +79,5 @@ private struct ContactView: View {
         }.frame(maxWidth: .infinity, minHeight: 156)
     }
 }
-
-#Preview {
-    @Previewable @State var navPath: [Scrns] = []
-    CustomerContactsScrn(navPath: $navPath)
-}
-
 
 

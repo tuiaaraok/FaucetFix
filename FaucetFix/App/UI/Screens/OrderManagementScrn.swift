@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct OrderManagementScrn: View {
     @Binding var navPath: [Scrns]
     
@@ -48,6 +49,7 @@ struct OrderManagementScrn: View {
     }
 }
 
+@available(iOS 16.0, *)
 private struct OrderView: View {
     
     let order: Order
@@ -79,11 +81,4 @@ private struct OrderView: View {
         }.frame(maxWidth: .infinity, minHeight: 156)
     }
 }
-
-#Preview {
-    @Previewable @State var navPath: [Scrns] = []
-    OrderManagementScrn(navPath: $navPath)
-}
-
-
 

@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct MainActnBtn: View {
     let txt: String
     let actn: () -> Void
@@ -22,9 +23,5 @@ struct MainActnBtn: View {
         }
         .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
     }
-}
-
-#Preview {
-    MainActnBtn(txt: "Some Text", actn: {})
 }
 

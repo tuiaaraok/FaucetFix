@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct EntryAddingScrn: View {
     @Binding var navPath: [Scrns]
     
@@ -118,6 +119,7 @@ struct EntryAddingScrn: View {
     }
 }
 
+@available(iOS 16.0, *)
 private struct MaterialView: View {
      
     @Binding var material: ObjectWithNameOnly
@@ -127,6 +129,7 @@ private struct MaterialView: View {
     }
 }
 
+@available(iOS 16.0, *)
 private struct ClientSelectionView: View {
     @Binding var clientName: String
     @Binding var isMenuVisible: Bool
@@ -161,13 +164,6 @@ private struct ClientSelectionView: View {
             }
         }.padding(EdgeInsets(top: 0, leading: 32, bottom: 0, trailing: 32))
     }
-}
-
-
-
-#Preview {
-    @Previewable @State var navPath: [Scrns] = []
-    EntryAddingScrn(navPath: $navPath)
 }
 
 
