@@ -4,13 +4,16 @@ class Storage: ObservableObject {
     
     static let shared = Storage()
     
-    
     private let ordersKey = "orders"
     private let contactsKey = "contacts"
     private let workRecordsKey = "workRecords"
     private let stocksKey = "stocks"
     
     private init() {}
+    
+    let appId = "6739542270"
+    let privacyPolicyUrl = "https://docs.google.com/document/d/1BWtNLWab5o89ZkF6IVStUKC_P5TK5AQnV0AQuvNvl68/mobilebasic"
+    let email = "serkandurmaz78@icloud.com"
     
     func updateStockCountById(id: UUID, quantity: Int) {
         var stocks = getStocks()
